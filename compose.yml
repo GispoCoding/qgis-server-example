@@ -1,0 +1,9 @@
+services:
+
+  qgis-server:
+    image: qgis/qgis-server:3.40
+    container_name: example-qgis-server
+    ports:
+      - 8080:80
+    volumes:
+      - ./data:/io/data
